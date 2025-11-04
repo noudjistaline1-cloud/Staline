@@ -1,0 +1,67 @@
+# ==========================================================
+#  STALINE PRO MAX AUTO v10 - AUTO SETTINGS FILE
+#  Version : 10.0 (Full Strict MT5)
+#  Mode : 100% Automatique
+#  Description :
+#    Fichier de configuration distant pour les stratégies
+#    SMA, RSI, ADX, ATR adaptatives. Compatible backtest & réel.
+#    Optimisé pour rendement élevé, risque contrôlé, et
+#    mise à jour automatique via HTTPS (SafeWebRequest).
+# ==========================================================
+
+# === PARAMÈTRES GÉNÉRAUX ===
+EnableLogging=1
+BaseRiskPerTradePercent=0.30
+MaxDailyLossPercent=9.5
+ScalingTranches=3
+MinLot=0.01
+
+# === PARAMÈTRES TEMPS DE TRADING ===
+TradeStartHour=8
+TradeEndHour=22
+FridayStopHour=20
+
+# === PARAMÈTRES TECHNIQUES INDICATEURS ===
+UseSMA=1
+SMAPeriodFast=20
+SMAPeriodSlow=50
+RSIPeriod=14
+ADXPeriod=14
+ATRPeriod=14
+ATRMultiplierSL=1.5
+ATRMultiplierTP=2.5
+
+# === PARAMÈTRES STRATÉGIE ADAPTATIVE ===
+AdaptiveLearning=1
+PatternMinSamples=10
+ProfileSaveIntervalMins=60
+AdaptiveProfileFile=Adaptive_Profile.csv
+
+# === PARAMÈTRES DE SÉCURITÉ ===
+UseSafeWebRequests=1
+RateWindowSec=60
+RateMaxPerWindow=30
+MaxResponseBytes=200000
+
+# === PARAMÈTRES NEWS FILTER (ÉVÉNEMENTS) ===
+UseNewsFilter=1
+NewsWebURL=https://tradingeconomics.com/calendar.csv
+NewsFilterMins=15
+
+# === MISE À JOUR AUTOMATIQUE (.SET) ===
+AutoUpdateSettings=1
+SettingsWebURL=https://raw.githubusercontent.com/noudjistaline1-cloud/StalinePRO/main/StalinePRO_Settings_v10.set
+
+# === PARAMÈTRES DE TEST / BACKTEST ===
+BacktestMode=1
+TestDeposit=10000
+TestSpread=10
+TestLeverage=500
+Slippage=3
+
+# ==========================================================
+#  Fin du fichier - Staline PRO Max Auto v10
+#  Auteur : Staline Noudji (GPT-5 Assisted)
+#  Domaine autorisé : githubusercontent.com / tradingeconomics.com
+#  Généré par : GPT-5 Secure MT5 Configurator
+# ==========================================================
